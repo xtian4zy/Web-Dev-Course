@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Gradient Example</title>
     <style>
+        *{
+            margin: 0;
+            padding: 2px;
+        }
         header{
             display: flex;
-            justify-content: space-between;
-            
+            justify-content: space-between; 
+            background-color: aqua;           
         }
         .navlink li{
             display: inline-block;
             padding: 0 30px;
+        }
+        .logo{
+            width: 130px;
+            height: 80px;
+        }
+        #grad1{
+            height: 200px;
+            background-image: linear-gradient(red,blue);
         }
 
     </style>
 </head>
 <body>
     <header>
-        <img class="logo" href="../images/logo3.png" alt="Logo">
+        <img src="../../images/logo3.png" alt="Logo" class="logo">
         <nav>
             <ul class="navlink">
                 <li><a href="#">Home</a></li>
@@ -30,5 +42,10 @@
         </nav>
         <a href="#"><button>Follow Me</button></a>
     </header>
+    <h3 style="text-align: center;">Linear Gradient Example One - Top to Bottom</h3>
+    <div id="grad1"></div>
+
+    <h3 style="text-align: center;">Linear Gradient Example Two - Left to Right</h3>
+    <div id="grad2"></div>
 </body>
 </html>
